@@ -9,7 +9,7 @@ LABEL com.github.actions.description "Run a tox-conda"
 LABEL com.github.actions.icon code
 LABEL com.github.actions.color blue
 
-RUN conda install tox-conda -c conda-forge
+RUN conda install tox-conda -c conda-forge -y
 
 ENTRYPOINT ["python", "-m", "tox"]
 CMD []
