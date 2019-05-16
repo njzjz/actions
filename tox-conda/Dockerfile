@@ -11,7 +11,7 @@ LABEL "com.github.actions.color"="blue"
 
 RUN conda install tox-conda -c conda-forge -y
 
-RUN if [ -x "$SETUP_XVFB" ]; then apt-get update && apt-get install -y xvfb; fi
+RUN if [ -x "$SETUP_XVFB" ]; then apt-get update && apt-get install -y xvfb && Xvfb -ac -screen scrn 1280x2000x24 :9.0 & ; fi
 
 ENTRYPOINT ["python", "-m", "tox"]
 CMD []
