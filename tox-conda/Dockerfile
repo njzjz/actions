@@ -13,7 +13,7 @@ RUN conda install tox-conda -c conda-forge -y
 
 RUN test $SETUP_XVFB=True && apt-get update && apt-get install -y xvfb || :
 
-RUN test $SETUP_GAUSSIAN=True && git clone --depth 1 https://github.com/circulosmeos/gdown.pl && ./gdown.pl/gdown.pl $GAUSSIANURL "g16.tgz">/dev/null 2>&1 && tar -xzvf g16.tgz && g16root=$(pwd) source g16/bsd/g16.profile || :
+COPY "entrypoint.sh" "/entrypoint.sh"
+ENTRYPOINT ["/entrypoint.sh"]
 
-ENTRYPOINT ["python", "-m", "tox"]
 CMD []
