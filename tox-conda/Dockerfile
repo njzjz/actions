@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:4.6.14
+FROM continuumio/miniconda3:4.6.14@sha256:97c73cf6b1aef82bb9f79d9ee82bdcb7bcef07d508fa270bc608bf61d7e98bec
 
 LABEL "maintainer"="Jinzhe Zeng <jinzhe.zeng@rutgers.edu>"
 LABEL "repository"="https://github.com/njzjz/gh-action-tox-conda"
