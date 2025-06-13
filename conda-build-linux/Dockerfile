@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3:4.7.12@sha256:6c979670684d970f8ba934bf9b7bf42e77c30a22eb96af1f30a039b484719159
 
-LABEL "maintainer"="Jinzhe Zeng <jinzhe.zeng@rutgers.edu>"
+LABEL "maintainer"="Jinzhe Zeng <jinzhe.zeng@ustc.edu.cn>"
 LABEL "repository"="https://github.com/njzjz/actions"
 LABEL "homepage"="https://github.com/njzjz/actions"
 
